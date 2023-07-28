@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.background {
+    background-color: rgb(31, 31, 31);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.container {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+.offset{
+    width: 20%;
+}
+.gamePanel {
+    margin-right: 100px;
+    height: 80vh;
+    max-width: 450px;
+    max-height: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 7px white;
+
+}
+.gameTable{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: auto;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 7px white;
+}
+th, td {
+    font-size: medium;
+    width: 90px;
+    height: 35px;
+    border: 1px solid white;
+    text-align: left;
+    padding: 8px;
+}
+.sector {
+    text-shadow: 3px 1px 0px rgb(179, 179, 179);
+    font-size: 130px;
+    font-family: 'Comic Neue', cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 148px;
+    height: 148px;
+    border: 1px solid white;
+    border-collapse: collapse;
+    transition: 1s;
+}
+.hide {
+    color: white;
+    font-size: 200px;
+    display: none;
+    transition: 1s;
+}
+.winner {
+    color: white;
+    font-size: 20px;
+    text-shadow: 5px 5px 100px white;
+    transition: 1s;
+}
+.btn {
+    width: 150px;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+.btn:active {
+    box-shadow: 0px 0px 10px white;
+    color: gray;
+}
+.buttons {
+    display: inline-block;
+}
+.p1Color {
+    color: green;
+    font-family: 'Comic Neue', cursive;
+}
+.p2Color {
+    color: blue;
+    font-family: 'Comic Neue', cursive;
+}
+#playSelect {
+    font-weight: bold;
+    font-family: 'Comic Neue', cursive;
+}
+.tableData{
+    font-size: large;
+    text-align: center;
+    font-weight: 300;
+}
+@media(max-width: 800px){
+    .gamePanel{
+        max-width: 300px;
+        max-height: 300px;
+        margin-right: 50px;
+    }
+    .sector {
+        width: 98px;
+        height: 98px;
+    }
+}
+@media(max-width: 550px){
+    .container {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .gamePanel{
+        max-width: 300px;
+        max-height: 300px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    th, td {
+        width: 60px;
+        height: 20px;
+        border: 1px solid white;
+        text-align: left;
+        padding: 6px;
+    }
+    .pool {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .gameTable{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        height: auto;
+        border-collapse: collapse;
+    }
+}

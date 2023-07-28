@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V.2 Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Nunito:wght@300;400;600&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main class="background">
+        <h1>Baze's Tic Tac Toe Game</h1>
+        <h2>It's player <span class="displayPlayer"></span> turn!</h2>
+        <div class="container">
+            <div class="offset"></div>
+            <div class="gamePanel">
+                <div class="sector">
+
+                </div>
+                <div class="sector">
+
+                </div>
+                <div class="sector">
+
+                </div>
+                <div class="sector">
+
+                </div>
+                <div class="sector">
+
+                </div>
+                <div class="sector">
+
+                </div>
+                <div class="sector">
+
+                </div>
+                <div class="sector">
+
+                </div>
+                <div class="sector">
+
+                </div>
+            </div>
+            <div class="pool">
+                <label for="playSelect">Playing to:</label>
+                <select name="" id="playSelect">
+                    <option value="" selected disabled hidden>select No. of plays</option>
+                    <option value="1">1</option>
+                    <option value="3">3</option>
+                    <option value="5">5</option>
+                </select>
+                <table class="gameTable">
+                </table>
+
+            </div>
+
+        </div>
+        <h2 class="winner hide">The winner is player <span class="winPlayer"></span></h2>
+        <h3 class='finalScore hide'>ovde rezultat</h3>
+        <div class='buttons'>
+            <button class="btn resetBtn">Reset</button>
+            <button class="btn nextPlayBtn">Next Game</button>
+        </div>
+
+    </main>
+
+    <script src='X-O.js'></script>
+</body>
+
+</html>
